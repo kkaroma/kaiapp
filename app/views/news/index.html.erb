@@ -6,9 +6,9 @@
   <% @news.each do |news| %>
     <%= render news %>
     <p>
-      <%= link_to "Show this news", news %>
+      <%= link_to "Show more...", news, class: "btn btn-primary" %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "New news", new_news_path %>
+<%= link_to "Create New Article", new_news_path, class: "btn btn-primary" %>
