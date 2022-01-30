@@ -1,12 +1,12 @@
 <div id="<%= dom_id news %>">
   <p>
-    <strong>Title:</strong>
-    <%= news.title %>
+    <strong><h1>Title:</h1></strong>
+    <h2><%= news.title %></h2>
   </p>
 
   <p>
     <strong>Contents:</strong>
-    <%= news.contents %>
+    <%= simple_format(news.contents) %>
   </p>
 
 </div>
